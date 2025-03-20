@@ -31,14 +31,13 @@ const counter = {
   step: 4,
 
   increment: function() {
-    counter.count += counter.step;
+    console.log(this)
+    return this.count += this.step;
   }
 };
 
 
-
-
-console.log(counter.count); 
+ 
 
 counter.increment();
 console.log(counter.count); 
